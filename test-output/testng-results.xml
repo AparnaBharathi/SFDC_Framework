@@ -1,81 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-02T22:45:15 PST" name="Default suite" finished-at="2023-01-02T22:46:27 PST" duration-ms="71885">
+  <suite started-at="2023-01-03T23:55:53 PST" name="Default suite" finished-at="2023-01-03T23:56:08 PST" duration-ms="15356">
     <groups>
     </groups>
-    <test started-at="2023-01-02T22:45:15 PST" name="Default test" finished-at="2023-01-02T22:46:27 PST" duration-ms="71885">
-      <class name="testScript.CreateAccountsScript">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:15 PST" name="setUp" finished-at="2023-01-02T22:45:15 PST" duration-ms="271" status="PASS">
+    <test started-at="2023-01-03T23:55:53 PST" name="Default test" finished-at="2023-01-03T23:56:08 PST" duration-ms="15356">
+      <class name="testScript.createOptuntyScript">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScript.createOptuntyScript@10cf09e8]" started-at="2023-01-03T23:55:53 PST" name="setUp" finished-at="2023-01-03T23:55:53 PST" duration-ms="349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:15 PST" name="setDriver" finished-at="2023-01-02T22:45:18 PST" duration-ms="2995" status="PASS">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.createOptuntyScript@10cf09e8]" started-at="2023-01-03T23:55:53 PST" name="setDriver" finished-at="2023-01-03T23:55:56 PST" duration-ms="3054" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="createAccount_TC10()[pri:11, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:18 PST" name="createAccount_TC10" finished-at="2023-01-02T22:45:29 PST" duration-ms="11256" status="PASS">
+        <test-method signature="verifyOptunty_TC15()[pri:16, instance:testScript.createOptuntyScript@10cf09e8]" started-at="2023-01-03T23:55:56 PST" name="verifyOptunty_TC15" finished-at="2023-01-03T23:56:08 PST" duration-ms="11927" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createAccount_TC10 -->
-        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:29 PST" name="removeDriver" finished-at="2023-01-02T22:45:30 PST" duration-ms="297" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- removeDriver -->
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:30 PST" name="setDriver" finished-at="2023-01-02T22:45:32 PST" duration-ms="1978" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDriver -->
-        <test-method signature="createNewView_TC11()[pri:12, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:32 PST" name="createNewView_TC11" finished-at="2023-01-02T22:45:42 PST" duration-ms="10775" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNewView_TC11 -->
-        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:42 PST" name="removeDriver" finished-at="2023-01-02T22:45:43 PST" duration-ms="293" status="PASS">
+        </test-method> <!-- verifyOptunty_TC15 -->
+        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.createOptuntyScript@10cf09e8]" started-at="2023-01-03T23:56:08 PST" name="removeDriver" finished-at="2023-01-03T23:56:08 PST" duration-ms="311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeDriver -->
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:43 PST" name="setDriver" finished-at="2023-01-02T22:45:45 PST" duration-ms="1939" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDriver -->
-        <test-method signature="editView_TC12()[pri:13, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:45 PST" name="editView_TC12" finished-at="2023-01-02T22:45:57 PST" duration-ms="11858" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editView_TC12 -->
-        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:57 PST" name="removeDriver" finished-at="2023-01-02T22:45:57 PST" duration-ms="226" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- removeDriver -->
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:57 PST" name="setDriver" finished-at="2023-01-02T22:45:59 PST" duration-ms="2052" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDriver -->
-        <test-method signature="mergeAcc_TC13()[pri:14, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:59 PST" name="mergeAcc_TC13" finished-at="2023-01-02T22:46:10 PST" duration-ms="10836" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mergeAcc_TC13 -->
-        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:46:10 PST" name="removeDriver" finished-at="2023-01-02T22:46:10 PST" duration-ms="295" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- removeDriver -->
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:46:10 PST" name="setDriver" finished-at="2023-01-02T22:46:12 PST" duration-ms="1859" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDriver -->
-        <test-method signature="createAccReport_TC14()[pri:15, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:46:12 PST" name="createAccReport_TC14" finished-at="2023-01-02T22:46:27 PST" duration-ms="14912" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAccReport_TC14 -->
-        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:46:27 PST" name="removeDriver" finished-at="2023-01-02T22:46:27 PST" duration-ms="257" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- removeDriver -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:46:27 PST" name="tearDown" finished-at="2023-01-02T22:46:28 PST" duration-ms="433" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testScript.createOptuntyScript@10cf09e8]" started-at="2023-01-03T23:56:08 PST" name="tearDown" finished-at="2023-01-03T23:56:09 PST" duration-ms="462" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testScript.CreateAccountsScript -->
+      </class> <!-- testScript.createOptuntyScript -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

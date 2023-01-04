@@ -132,7 +132,7 @@ public class UserMenu extends BasePage{
 	
 	public boolean verifyUserMenuItems() throws IOException {
 		boolean isOptionVerified=true;
-		String expectedMenuItems[]= DataUtils.readAccounts("usermenu.tems").split(",");
+		String expectedMenuItems[]= DataUtils.readAccounts("usermenu.items").split(",");
 		for(int i=0;i<userMenuOptions.size();i++) {
 			String actualMenuItemValue=userMenuOptions.get(i).getText();
 			if(actualMenuItemValue.equalsIgnoreCase(expectedMenuItems[i])) {

@@ -66,13 +66,17 @@ public class LoginPage extends BasePage{
 	
 	public Boolean enterUsername(String uname) throws IOException {
 		if(username.isDisplayed()) {
+			logger.info("Username visible");
 			username.sendKeys(uname);
+			logger.info("Username entered");
 			test.info("UserName is entered");
 			return true;
 		}
 		else {
 			test.fail("Username not found");
+			logger.error("Username not found");
 			test.addScreenCaptureFromPath(Utilities.captureScreenshot(driver));
+			logger.error("Screenshot captured");
 			return false;
 		}
 	}
@@ -85,13 +89,17 @@ public class LoginPage extends BasePage{
 	
 	public Boolean enterPswd(String pswd) throws IOException {
 		if(password.isDisplayed()) {
+			logger.info("Password visible");
 			password.sendKeys(pswd);
+			logger.info("Password entered");
 			test.info("Pswd entered");
 			return true;
 		}
 		else {
 			test.fail("Pswd not found");
+			logger.error("password not visible");
 			test.addScreenCaptureFromPath(Utilities.captureScreenshot(driver));
+			logger.error("Screenshot captured");
 			return false;
 		}
 	}
@@ -104,13 +112,17 @@ public class LoginPage extends BasePage{
 	
 	public Boolean clickLogin() throws IOException {
 		if(login.isDisplayed()) {
+			logger.info("Login visible");
 			login.click();
+			logger.info("Login clicked");
 			test.info("Clicked login");
 			return true;
 		}
 		else {
 			test.fail("Login not found");
+			logger.error("Login not visible");
 			test.addScreenCaptureFromPath(Utilities.captureScreenshot(driver));
+			logger.error("Screenshot captured");
 			return false;
 		}
 	}
@@ -124,55 +136,69 @@ public class LoginPage extends BasePage{
 	public Boolean rememberMe() throws IOException {
 		boolean selectRememberMe=false;
 		if(rememberMe.isDisplayed()) {
+			logger.info("rememberMe is visible");
 			if(rememberMe.isSelected()) {
 				selectRememberMe=true;
 			}
 			else {
+				logger.info("rememberMe is visible");
 				rememberMe.click();
+				logger.info("rememberMe is clicked");
 				selectRememberMe=true;
 				test.info("RemeberMe is clicked");
 			}
 		}
 		else {
 			test.fail("RemeberMe not found");
+			logger.info("rememberMe is not visible");
 			test.addScreenCaptureFromPath(Utilities.captureScreenshot(driver));
+			logger.error("Screenshot captured");
 		}
 		return selectRememberMe;
 	}
 	
 	public Boolean clearPasswd() {
 		password.clear();
+		logger.info("password is empty");
 		test.info("Password empty");
 		return true;
 	}
 	
 	public Boolean isErrorMsgSeen() throws IOException {
 		if(loginError.isDisplayed()) {
+			logger.info("Errormessage is visible");
 			test.info("Error message displayed");
 			return true;
 		}
 		else {
 			test.fail("ErrorMesg not found");
+			logger.error("error is  not visible");
 			test.addScreenCaptureFromPath(Utilities.captureScreenshot(driver));
+			logger.error("Screenshot captured");
 			return false;
 		}
 	}
 	
 	public Boolean isFreeTrialSeen() throws IOException {
-		test.pass("Free trail is not seen expected");
+		test.fail("Free trail is not seen expected");
+		logger.error("Free trial is not visible");
 		test.addScreenCaptureFromPath(Utilities.captureScreenshot(driver));
-		return true;
+		logger.error("Screenshot captured");
+		return false;
 		
 	}
 	
 	public Boolean isSavedUserNameSeen() throws IOException {
 		if(savedUser.isDisplayed()) {
+			logger.info("Username is saved");
 			test.info("Username saved");
 			return true;
 		}
 		else {
 			test.fail("Saved username not found");
+			logger.info("username is not saved");
 			test.addScreenCaptureFromPath(Utilities.captureScreenshot(driver));
+			logger.error("Screenshot captured");
 			return false;
 		}
 	}
@@ -185,6 +211,7 @@ public class LoginPage extends BasePage{
 		driver.get(DataUtils.readAccounts("prod.sfdc.url"));
 		driver.manage().window().maximize();
 		test.info("App launched");
+		logger.info("app is launched");
 		return true;
 		
 	}
@@ -192,12 +219,16 @@ public class LoginPage extends BasePage{
 	public boolean clickOnForgotPswd() throws IOException {
 		boolean forgotPswdSeen=true;
 		if(forgotPswd.isDisplayed()) {
+			logger.info("forgotpswd is visible");
 			forgotPswd.click();
+			logger.info("forgotpswd is clicked");
 			test.info("forgotPswd clicked");
 		}
 		else {
 			test.fail("ForgotPswd not found");
+			logger.info("forgotpswd is not visible");
 			test.addScreenCaptureFromPath(Utilities.captureScreenshot(driver));
+			logger.error("Screenshot captured");
 			forgotPswdSeen=false;
 		}
 		return forgotPswdSeen;
@@ -221,10 +252,13 @@ public class LoginPage extends BasePage{
 			clickLogin();
 			isLoginSuccess=true;
 			test.info("Login success");
+			logger.info("Login success");
 		}
 		else {
 			test.fail("Login failed");
+			logger.info("Login failed");
 			test.addScreenCaptureFromPath(Utilities.captureScreenshot(driver));
+			logger.error("Screenshot captured");
 		}
 		return isLoginSuccess;
 	}
