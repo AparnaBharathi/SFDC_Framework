@@ -2,80 +2,80 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-01T21:30:12 PST" name="Default suite" finished-at="2023-01-01T21:30:47 PST" duration-ms="35398">
+  <suite started-at="2023-01-02T22:45:15 PST" name="Default suite" finished-at="2023-01-02T22:46:27 PST" duration-ms="71885">
     <groups>
     </groups>
-    <test started-at="2023-01-01T21:30:12 PST" name="Default test" finished-at="2023-01-01T21:30:47 PST" duration-ms="35398">
-      <class name="testScript.LoginPageScript">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testScript.LoginPageScript@45b9a632]" started-at="2023-01-01T21:30:11 PST" name="setUp" finished-at="2023-01-01T21:30:12 PST" duration-ms="425" status="PASS">
+    <test started-at="2023-01-02T22:45:15 PST" name="Default test" finished-at="2023-01-02T22:46:27 PST" duration-ms="71885">
+      <class name="testScript.CreateAccountsScript">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:15 PST" name="setUp" finished-at="2023-01-02T22:45:15 PST" duration-ms="271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.LoginPageScript@45b9a632]" started-at="2023-01-01T21:30:12 PST" name="setDriver" finished-at="2023-01-01T21:30:15 PST" duration-ms="3510" status="PASS">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:15 PST" name="setDriver" finished-at="2023-01-02T22:45:18 PST" duration-ms="2995" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="loginErrorMsg_TC01()[pri:1, instance:testScript.LoginPageScript@45b9a632]" started-at="2023-01-01T21:30:15 PST" name="loginErrorMsg_TC01" finished-at="2023-01-01T21:30:18 PST" duration-ms="2389" status="PASS">
+        <test-method signature="createAccount_TC10()[pri:11, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:18 PST" name="createAccount_TC10" finished-at="2023-01-02T22:45:29 PST" duration-ms="11256" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginErrorMsg_TC01 -->
-        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.LoginPageScript@45b9a632]" started-at="2023-01-01T21:30:18 PST" name="removeDriver" finished-at="2023-01-01T21:30:18 PST" duration-ms="219" status="PASS">
+        </test-method> <!-- createAccount_TC10 -->
+        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:29 PST" name="removeDriver" finished-at="2023-01-02T22:45:30 PST" duration-ms="297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeDriver -->
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.LoginPageScript@45b9a632]" started-at="2023-01-01T21:30:18 PST" name="setDriver" finished-at="2023-01-01T21:30:20 PST" duration-ms="1917" status="PASS">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:30 PST" name="setDriver" finished-at="2023-01-02T22:45:32 PST" duration-ms="1978" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="login_TC02()[pri:2, instance:testScript.LoginPageScript@45b9a632]" started-at="2023-01-01T21:30:20 PST" name="login_TC02" finished-at="2023-01-01T21:30:27 PST" duration-ms="7331" status="PASS">
+        <test-method signature="createNewView_TC11()[pri:12, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:32 PST" name="createNewView_TC11" finished-at="2023-01-02T22:45:42 PST" duration-ms="10775" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login_TC02 -->
-        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.LoginPageScript@45b9a632]" started-at="2023-01-01T21:30:27 PST" name="removeDriver" finished-at="2023-01-01T21:30:27 PST" duration-ms="246" status="PASS">
+        </test-method> <!-- createNewView_TC11 -->
+        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:42 PST" name="removeDriver" finished-at="2023-01-02T22:45:43 PST" duration-ms="293" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeDriver -->
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.LoginPageScript@45b9a632]" started-at="2023-01-01T21:30:27 PST" name="setDriver" finished-at="2023-01-01T21:30:29 PST" duration-ms="1956" status="PASS">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:43 PST" name="setDriver" finished-at="2023-01-02T22:45:45 PST" duration-ms="1939" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="rememberMe_TC03()[pri:3, instance:testScript.LoginPageScript@45b9a632]" started-at="2023-01-01T21:30:29 PST" name="rememberMe_TC03" finished-at="2023-01-01T21:30:39 PST" duration-ms="9924" status="PASS">
+        <test-method signature="editView_TC12()[pri:13, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:45 PST" name="editView_TC12" finished-at="2023-01-02T22:45:57 PST" duration-ms="11858" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- rememberMe_TC03 -->
-        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.LoginPageScript@45b9a632]" started-at="2023-01-01T21:30:39 PST" name="removeDriver" finished-at="2023-01-01T21:30:40 PST" duration-ms="226" status="PASS">
+        </test-method> <!-- editView_TC12 -->
+        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:57 PST" name="removeDriver" finished-at="2023-01-02T22:45:57 PST" duration-ms="226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeDriver -->
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.LoginPageScript@45b9a632]" started-at="2023-01-01T21:30:40 PST" name="setDriver" finished-at="2023-01-01T21:30:41 PST" duration-ms="1843" status="PASS">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:57 PST" name="setDriver" finished-at="2023-01-02T22:45:59 PST" duration-ms="2052" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="forgorPswd_TC04A()[pri:4, instance:testScript.LoginPageScript@45b9a632]" started-at="2023-01-01T21:30:41 PST" name="forgorPswd_TC04A" finished-at="2023-01-01T21:30:43 PST" duration-ms="1150" status="PASS">
+        <test-method signature="mergeAcc_TC13()[pri:14, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:45:59 PST" name="mergeAcc_TC13" finished-at="2023-01-02T22:46:10 PST" duration-ms="10836" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- forgorPswd_TC04A -->
-        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.LoginPageScript@45b9a632]" started-at="2023-01-01T21:30:43 PST" name="removeDriver" finished-at="2023-01-01T21:30:43 PST" duration-ms="158" status="PASS">
+        </test-method> <!-- mergeAcc_TC13 -->
+        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:46:10 PST" name="removeDriver" finished-at="2023-01-02T22:46:10 PST" duration-ms="295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeDriver -->
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.LoginPageScript@45b9a632]" started-at="2023-01-01T21:30:43 PST" name="setDriver" finished-at="2023-01-01T21:30:45 PST" duration-ms="1950" status="PASS">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:46:10 PST" name="setDriver" finished-at="2023-01-02T22:46:12 PST" duration-ms="1859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="invalidCredentials_TC04B()[pri:5, instance:testScript.LoginPageScript@45b9a632]" started-at="2023-01-01T21:30:45 PST" name="invalidCredentials_TC04B" finished-at="2023-01-01T21:30:47 PST" duration-ms="2293" status="PASS">
+        <test-method signature="createAccReport_TC14()[pri:15, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:46:12 PST" name="createAccReport_TC14" finished-at="2023-01-02T22:46:27 PST" duration-ms="14912" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidCredentials_TC04B -->
-        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.LoginPageScript@45b9a632]" started-at="2023-01-01T21:30:47 PST" name="removeDriver" finished-at="2023-01-01T21:30:47 PST" duration-ms="213" status="PASS">
+        </test-method> <!-- createAccReport_TC14 -->
+        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:46:27 PST" name="removeDriver" finished-at="2023-01-02T22:46:27 PST" duration-ms="257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeDriver -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testScript.LoginPageScript@45b9a632]" started-at="2023-01-01T21:30:47 PST" name="tearDown" finished-at="2023-01-01T21:30:48 PST" duration-ms="436" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testScript.CreateAccountsScript@45b9a632]" started-at="2023-01-02T22:46:27 PST" name="tearDown" finished-at="2023-01-02T22:46:28 PST" duration-ms="433" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testScript.LoginPageScript -->
+      </class> <!-- testScript.CreateAccountsScript -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

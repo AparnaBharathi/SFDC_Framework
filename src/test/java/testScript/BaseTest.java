@@ -78,8 +78,5 @@ public class BaseTest {
 		extent=new ExtentReports();
 		ExtentSparkReporter sparkHtml=new ExtentSparkReporter(reportPath);
 		extent.attachReporter(sparkHtml);
-		
-		///Users/aparnakarthik/eclipse-workspace/SDFCFramework/src/test/java/reports
-		
 	}
 }

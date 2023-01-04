@@ -34,10 +34,7 @@ public class LoginPageScript extends BaseTest{
 		WebDriver driver=BaseTest.getDriver();
 		ExtentTest test=extent.createTest("login_TC02");
 		LoginPage lp=new LoginPage(driver,test);
-		Assert.assertTrue(lp.launchApp(driver), "App is not launched");
-		Assert.assertTrue(lp.enterUsername(DataUtils.readAccounts("valid.username")), "Username not entered");
-		Assert.assertTrue(lp.enterPswd(DataUtils.readAccounts("valid.password")), "Password not entered");
-		Assert.assertTrue(lp.clickLogin(), "Login not clicked");
+		Assert.assertTrue(lp.loginToSFDC(), "Login not happened");
 		Assert.assertTrue(lp.isFreeTrialSeen(), "Free trial not seen");
 		
 	}
@@ -55,7 +52,7 @@ public class LoginPageScript extends BaseTest{
 		Assert.assertTrue(lp.clickLogin(), "Login not clicked");
 		Utilities.waitForElement(driver, um.userMenu);
 		Assert.assertTrue(um.clickOnUserMenu(), "User Menu not clicked");
-		Assert.assertTrue(um.selectOptionUserMenuDropDown(driver, "Logout"), "Logut not clicked");
+		Assert.assertTrue(um.selectOptionUserMenuDropDown("Logout"), "Logut not clicked");
 		Utilities.waitForElement(driver, lp.savedUser);
 		Assert.assertEquals(lp.getSavedUser(), DataUtils.readAccounts("valid.username"));
 	}

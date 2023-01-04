@@ -183,6 +183,7 @@ public class LoginPage extends BasePage{
 	
 	public Boolean launchApp(WebDriver driver) throws IOException {
 		driver.get(DataUtils.readAccounts("prod.sfdc.url"));
+		driver.manage().window().maximize();
 		test.info("App launched");
 		return true;
 		
@@ -209,5 +210,22 @@ public class LoginPage extends BasePage{
 	public String getErrorMsg() {
 		//System.out.println(loginError.getText());
 		return loginError.getText();
+	}
+	
+	public Boolean loginToSFDC() throws IOException {
+		boolean isLoginSuccess =false;
+		boolean appLaunh=launchApp(driver);
+		if(appLaunh) {
+			enterUsername(DataUtils.readAccounts("valid.username"));
+			enterPswd(DataUtils.readAccounts("valid.password"));
+			clickLogin();
+			isLoginSuccess=true;
+			test.info("Login success");
+		}
+		else {
+			test.fail("Login failed");
+			test.addScreenCaptureFromPath(Utilities.captureScreenshot(driver));
+		}
+		return isLoginSuccess;
 	}
 }
