@@ -18,17 +18,74 @@ public class createOptuntyScript extends BaseTest{
 
 	@Test(priority=16)
 	public static void verifyOptunty_TC15(Method name) throws IOException  {
-		logger.info(name.getName()+" started");
+		logger.info(name.getName()+"--------- started-----------");
 		WebDriver driver=BaseTest.getDriver();
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		CreateOptunty co=new CreateOptunty(driver,test);
 		Assert.assertTrue(lp.loginToSFDC(), "Login should happen");
-		co.oppTab.click();
-		Utilities.waitForElement(driver, co.oppDropDown);
-		co.oppDropDown.click();
-		Assert.assertTrue(co.verifyOppDropDownItems(),"Items should be verified");
-		Assert.assertTrue(co.selectOptionOppDropDown(3),"Option should be selected");
-		logger.info(name.getName()+" started");
+		Utilities.waitForElement(driver, co.opTab);
+		co.opTab.click();
+		Utilities.waitForElement(driver, co.opDropDown);
+		co.opDropDown.click();
+		Assert.assertTrue(co.verifyOpDropDownItems(),"Items should be verified");
+		Assert.assertTrue(co.selectOptionOpDropDown(3),"Option should be selected");
+		logger.info(name.getName()+" --------ended---------");
+	}
+	
+	@Test(priority=17)
+	public static void newOptunty_TC16(Method name) throws IOException  {
+		logger.info(name.getName()+" -------started---------");
+		WebDriver driver=BaseTest.getDriver();
+		ExtentTest test=extent.createTest(name.getName());
+		LoginPage lp=new LoginPage(driver,test);
+		CreateOptunty co=new CreateOptunty(driver,test);
+		Assert.assertTrue(lp.loginToSFDC(), "Login should happen");
+		Utilities.waitForElement(driver, co.opTab);
+		co.opTab.click();
+		Assert.assertTrue(co.createNewOp(),"New oportunity should be created");
+		logger.info(name.getName()+"---------ended-------------");
+	}
+	
+	@Test(priority=18)
+	public static void optuntyPipeline_TC17(Method name) throws IOException  {
+		logger.info(name.getName()+" -------started---------");
+		WebDriver driver=BaseTest.getDriver();
+		ExtentTest test=extent.createTest(name.getName());
+		LoginPage lp=new LoginPage(driver,test);
+		CreateOptunty co=new CreateOptunty(driver,test);
+		Assert.assertTrue(lp.loginToSFDC(), "Login should happen");
+		Utilities.waitForElement(driver, co.opTab);
+		co.opTab.click();
+		Assert.assertTrue(co.opPipeline(),"Opportunity pipeline should be created");
+		logger.info(name.getName()+"---------ended-------------");
+	}
+	
+	@Test(priority=19)
+	public static void stuckOptuntyReport_TC18(Method name) throws IOException  {
+		logger.info(name.getName()+" -------started---------");
+		WebDriver driver=BaseTest.getDriver();
+		ExtentTest test=extent.createTest(name.getName());
+		LoginPage lp=new LoginPage(driver,test);
+		CreateOptunty co=new CreateOptunty(driver,test);
+		Assert.assertTrue(lp.loginToSFDC(), "Login should happen");
+		Utilities.waitForElement(driver, co.opTab);
+		co.opTab.click();
+		Assert.assertTrue(co.opStuckReport(),"Opportunity Stuck report should be created");
+		logger.info(name.getName()+"---------ended-------------");
+	}
+	
+	@Test(priority=20)
+	public static void opQuatReport_TC19(Method name) throws IOException  {
+		logger.info(name.getName()+" -------started---------");
+		WebDriver driver=BaseTest.getDriver();
+		ExtentTest test=extent.createTest(name.getName());
+		LoginPage lp=new LoginPage(driver,test);
+		CreateOptunty co=new CreateOptunty(driver,test);
+		Assert.assertTrue(lp.loginToSFDC(), "Login should happen");
+		Utilities.waitForElement(driver, co.opTab);
+		co.opTab.click();
+		Assert.assertTrue(co.quatSummaryReport(),"Quaterly report should be created");
+		logger.info(name.getName()+"---------ended-------------");
 	}
 }

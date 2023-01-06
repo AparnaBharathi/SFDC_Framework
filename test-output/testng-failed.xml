@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScript.createOptuntyScript">
+      <class name="testScript.ContactsScript">
         <methods>
           <include name="tearDown"/>
           <include name="setDriver"/>
           <include name="removeDriver"/>
-          <include name="verifyOptunty_TC15"/>
           <include name="setUp"/>
+          <include name="myContactView_TC28" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testScript.createOptuntyScript -->
+      </class> <!-- testScript.ContactsScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

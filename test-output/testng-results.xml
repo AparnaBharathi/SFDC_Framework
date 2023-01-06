@@ -1,33 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-03T23:55:53 PST" name="Default suite" finished-at="2023-01-03T23:56:08 PST" duration-ms="15356">
+  <suite started-at="2023-01-05T15:37:54 PST" name="Default suite" finished-at="2023-01-05T15:39:37 PST" duration-ms="103590">
     <groups>
     </groups>
-    <test started-at="2023-01-03T23:55:53 PST" name="Default test" finished-at="2023-01-03T23:56:08 PST" duration-ms="15356">
-      <class name="testScript.createOptuntyScript">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testScript.createOptuntyScript@10cf09e8]" started-at="2023-01-03T23:55:53 PST" name="setUp" finished-at="2023-01-03T23:55:53 PST" duration-ms="349" status="PASS">
+    <test started-at="2023-01-05T15:37:54 PST" name="Default test" finished-at="2023-01-05T15:39:37 PST" duration-ms="103590">
+      <class name="testScript.ContactsScript">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:37:53 PST" name="setUp" finished-at="2023-01-05T15:37:54 PST" duration-ms="335" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.createOptuntyScript@10cf09e8]" started-at="2023-01-03T23:55:53 PST" name="setDriver" finished-at="2023-01-03T23:55:56 PST" duration-ms="3054" status="PASS">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:37:54 PST" name="setDriver" finished-at="2023-01-05T15:37:57 PST" duration-ms="3116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="verifyOptunty_TC15()[pri:16, instance:testScript.createOptuntyScript@10cf09e8]" started-at="2023-01-03T23:55:56 PST" name="verifyOptunty_TC15" finished-at="2023-01-03T23:56:08 PST" duration-ms="11927" status="PASS">
+        <test-method signature="newContact_TC25(java.lang.reflect.Method)[pri:26, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:37:57 PST" name="newContact_TC25" finished-at="2023-01-05T15:38:09 PST" duration-ms="11895" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void testScript.ContactsScript.newContact_TC25(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyOptunty_TC15 -->
-        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.createOptuntyScript@10cf09e8]" started-at="2023-01-03T23:56:08 PST" name="removeDriver" finished-at="2023-01-03T23:56:08 PST" duration-ms="311" status="PASS">
+        </test-method> <!-- newContact_TC25 -->
+        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:38:09 PST" name="removeDriver" finished-at="2023-01-05T15:38:09 PST" duration-ms="332" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeDriver -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testScript.createOptuntyScript@10cf09e8]" started-at="2023-01-03T23:56:08 PST" name="tearDown" finished-at="2023-01-03T23:56:09 PST" duration-ms="462" status="PASS">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:38:09 PST" name="setDriver" finished-at="2023-01-05T15:38:11 PST" duration-ms="1962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method signature="newContactView_TC26(java.lang.reflect.Method)[pri:27, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:38:11 PST" name="newContactView_TC26" finished-at="2023-01-05T15:38:22 PST" duration-ms="11024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void testScript.ContactsScript.newContactView_TC26(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newContactView_TC26 -->
+        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:38:22 PST" name="removeDriver" finished-at="2023-01-05T15:38:22 PST" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeDriver -->
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:38:22 PST" name="setDriver" finished-at="2023-01-05T15:38:24 PST" duration-ms="2048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method signature="recentContact_TC27(java.lang.reflect.Method)[pri:28, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:38:24 PST" name="recentContact_TC27" finished-at="2023-01-05T15:38:32 PST" duration-ms="7858" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void testScript.ContactsScript.recentContact_TC27(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recentContact_TC27 -->
+        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:38:32 PST" name="removeDriver" finished-at="2023-01-05T15:38:32 PST" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeDriver -->
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:38:32 PST" name="setDriver" finished-at="2023-01-05T15:38:34 PST" duration-ms="1920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method signature="myContactView_TC28(java.lang.reflect.Method)[pri:29, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:38:34 PST" name="myContactView_TC28" finished-at="2023-01-05T15:38:45 PST" duration-ms="10898" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void testScript.ContactsScript.myContactView_TC28(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myContactView_TC28 -->
+        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:38:45 PST" name="removeDriver" finished-at="2023-01-05T15:38:46 PST" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeDriver -->
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:38:46 PST" name="setDriver" finished-at="2023-01-05T15:38:47 PST" duration-ms="1977" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method signature="viewContact_TC29(java.lang.reflect.Method)[pri:30, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:38:47 PST" name="viewContact_TC29" finished-at="2023-01-05T15:38:58 PST" duration-ms="10315" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void testScript.ContactsScript.viewContact_TC29(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewContact_TC29 -->
+        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:38:58 PST" name="removeDriver" finished-at="2023-01-05T15:38:58 PST" duration-ms="273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeDriver -->
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:38:58 PST" name="setDriver" finished-at="2023-01-05T15:39:00 PST" duration-ms="1885" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method signature="viewError_TC30(java.lang.reflect.Method)[pri:31, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:39:00 PST" name="viewError_TC30" finished-at="2023-01-05T15:39:10 PST" duration-ms="9552" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void testScript.ContactsScript.viewError_TC30(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewError_TC30 -->
+        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:39:10 PST" name="removeDriver" finished-at="2023-01-05T15:39:10 PST" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeDriver -->
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:39:10 PST" name="setDriver" finished-at="2023-01-05T15:39:12 PST" duration-ms="1989" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method signature="viewCancel_TC31(java.lang.reflect.Method)[pri:32, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:39:12 PST" name="viewCancel_TC31" finished-at="2023-01-05T15:39:24 PST" duration-ms="12121" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void testScript.ContactsScript.viewCancel_TC31(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewCancel_TC31 -->
+        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:39:24 PST" name="removeDriver" finished-at="2023-01-05T15:39:24 PST" duration-ms="362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeDriver -->
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:39:24 PST" name="setDriver" finished-at="2023-01-05T15:39:26 PST" duration-ms="1928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method signature="saveAndNew_TC32(java.lang.reflect.Method)[pri:33, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:39:26 PST" name="saveAndNew_TC32" finished-at="2023-01-05T15:39:37 PST" duration-ms="10706" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void testScript.ContactsScript.saveAndNew_TC32(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAndNew_TC32 -->
+        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:39:37 PST" name="removeDriver" finished-at="2023-01-05T15:39:37 PST" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeDriver -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testScript.ContactsScript@177bea38]" started-at="2023-01-05T15:39:37 PST" name="tearDown" finished-at="2023-01-05T15:39:38 PST" duration-ms="510" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testScript.createOptuntyScript -->
+      </class> <!-- testScript.ContactsScript -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
