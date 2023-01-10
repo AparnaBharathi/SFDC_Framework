@@ -116,6 +116,31 @@ public class UserMenu extends BasePage{
 	@FindBy(xpath="//input[@value='Save All']")
 	public WebElement saveAll;
 	
+	@FindBy(xpath="//span[@title='Aparna Bharathi Suresh  ']")
+	public WebElement title;
+	
+	@FindBy(xpath="(//span[@class='publisherattachtext '])[1]")
+	public WebElement postLink;
+	
+	//@FindBy(xpath="//body[@class='chatterPublisherRTE cke_editable cke_editable_themed cke_contents_ltr cke_show_borders placeholder']")
+	//public WebElement postBody;
+	
+	@FindBy(css = "body.chatterPublisherRTE.cke_editable.cke_editable_themed.cke_contents_ltr.cke_show_borders.placeholder")
+	public WebElement postBody;
+	
+	@FindBy(xpath="//input[@id='publishersharebutton']")
+	public WebElement shareButton;
+	
+	@FindBy(xpath="(//span[@class='publisherattachtext '])[2]")
+	public WebElement fileLink;
+	
+	@FindBy(xpath="//a[@id='chatterUploadFileAction']")
+	public WebElement uploadFileFromComp;
+	
+	@FindBy(xpath="//input[@id='chatterFile']")
+	public WebElement chooseFile;
+	
+	
 	public boolean clickOnUserMenu() throws IOException {
 		boolean userMenuSeen=true;
 		if(userMenu.isDisplayed()) {
@@ -163,6 +188,74 @@ public class UserMenu extends BasePage{
 		}
 		return isOptionSelected;
 		
+	}
+	
+	public boolean editProf() throws InterruptedException, IOException {
+		boolean isEditProf=false;
+		editProfile.click();
+		Thread.sleep(3000);
+		driver.switchTo().frame(2);
+		Utilities.waitForElement(driver, aboutTab);
+		aboutTab.click();
+		lastName.clear();
+		lastName.sendKeys("Suresh");
+		saveAll.click();
+		if(title.isDisplayed()) {
+			isEditProf=true;
+			test.info("Edit profile name done");
+		}
+		else {
+			test.fail("Edit profile name failed");
+			test.addScreenCaptureFromPath(Utilities.captureScreenshot(driver));
+		}
+		return isEditProf;
+	}
+	
+	public boolean post() throws InterruptedException, IOException {
+		boolean isPosted=false;
+		postLink.click();
+		driver.switchTo().frame(0);
+		Thread.sleep(3000);
+		if(postBody.isDisplayed()) {
+			postBody.sendKeys("Hello Framework is working");
+			driver.switchTo().parentFrame();
+			if(shareButton.isDisplayed()) {
+				isPosted=true;
+				shareButton.click();
+				test.info("Posted");
+			}
+			else {
+				test.fail("post failed");
+				test.addScreenCaptureFromPath(Utilities.captureScreenshot(driver));
+			}
+		}
+		else {
+			test.fail("post box not available failed");
+			test.addScreenCaptureFromPath(Utilities.captureScreenshot(driver));
+		}
+		return isPosted;
+	}
+	
+	public boolean uploadFile() throws InterruptedException, IOException {
+		boolean isUploaded=false;
+		Utilities.waitForElement(driver, fileLink);
+		Thread.sleep(3000);
+		if(fileLink.isDisplayed()) {
+			fileLink.click();
+			Utilities.waitForElement(driver, uploadFileFromComp);
+			Thread.sleep(3000);
+			uploadFileFromComp.click();
+			Thread.sleep(3000);
+			chooseFile.sendKeys("/Users/aparnakarthik/Downloads/upload.csv");
+			Thread.sleep(3000);
+			shareButton.click();
+			isUploaded=true;
+		}
+		else {
+			test.fail("upload file failed");
+			test.addScreenCaptureFromPath(Utilities.captureScreenshot(driver));
+		}
+		return isUploaded;
 	}
 	
 	public boolean downloadLoginHistory() throws IOException {

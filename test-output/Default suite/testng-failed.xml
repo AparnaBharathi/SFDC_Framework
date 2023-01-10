@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScript.RandomScenariosScript">
+      <class name="testScript.UserMenuScript">
         <methods>
           <include name="tearDown"/>
           <include name="setDriver"/>
-          <include name="verifyTab_TC35" invocation-numbers="0"/>
           <include name="removeDriver"/>
           <include name="setUp"/>
+          <include name="myProfile_TC06" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testScript.RandomScenariosScript -->
+      </class> <!-- testScript.UserMenuScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

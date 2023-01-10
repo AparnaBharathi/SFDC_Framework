@@ -26,6 +26,25 @@ public class RandomScenariosScript extends BaseTest {
 		RandomScenrios rs=new RandomScenrios(driver,test);
 		Assert.assertTrue(lp.loginToSFDC(), "Login should happen");
 		Assert.assertTrue(rs.validateUserName(), "Username should be validated");
+		logger.info("******Ending test *********" +name.getName());
+	}
+	
+	@Test(priority=35)
+	public static void myProfile_TC34(Method name) throws IOException, InterruptedException {
+		logger.info("Started test " +name.getName());
+		WebDriver driver=BaseTest.getDriver();
+		ExtentTest test=extent.createTest(name.getName());
+		LoginPage lp=new LoginPage(driver,test);
+		UserMenu um=new UserMenu(driver,test);
+		Assert.assertTrue(lp.loginToSFDC(), "Login should be happened");
+		Utilities.waitForElement(driver, um.userMenu);
+		Assert.assertTrue(um.clickOnUserMenu(), "User Menu should be clicked");
+		Assert.assertTrue(um.verifyUserMenuItems(),"User Menu items should be found");
+		Assert.assertTrue(um.selectOptionUserMenuDropDown("My Profile"),"should be found");
+		Thread.sleep(3000);
+		Utilities.waitForElement(driver, um.editProfile);
+		Assert.assertTrue(um.editProf(),"Profile name should be edited");
+		logger.info("******Ending test *********" +name.getName());	
 	}
 	
 	@Test(priority=36)
