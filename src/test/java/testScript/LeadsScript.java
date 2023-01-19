@@ -27,8 +27,8 @@ public class LeadsScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		Leads l=new Leads(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should happen");
-		AssertJUnit.assertTrue(l.clickOnLeads(), "Leads should be clicked");
+		AssertJUnit.assertTrue("Login should happen", lp.loginToSFDC());
+		AssertJUnit.assertTrue("Leads should be clicked", l.clickOnLeads());
 		logger.info(name.getName()+"---------ended-------------");
 	}
 	
@@ -39,9 +39,9 @@ public class LeadsScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		Leads l=new Leads(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should happen");
-		AssertJUnit.assertTrue(l.clickOnLeads(), "Leads should be clicked");
-		AssertJUnit.assertTrue(l.verifyLeadsDropDownItems(), "Leads dropdown should be verified");
+		AssertJUnit.assertTrue("Login should happen", lp.loginToSFDC());
+		AssertJUnit.assertTrue("Leads should be clicked", l.clickOnLeads());
+		AssertJUnit.assertTrue("Leads dropdown should be verified", l.verifyLeadsDropDownItems());
 		logger.info(name.getName()+"---------ended-------------");
 	}
 	
@@ -52,18 +52,18 @@ public class LeadsScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		Leads l=new Leads(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should happen");
-		AssertJUnit.assertTrue(l.clickOnLeads(), "Leads should be clicked");
+		AssertJUnit.assertTrue("Login should happen", lp.loginToSFDC());
+		AssertJUnit.assertTrue("Leads should be clicked", l.clickOnLeads());
 		l.selectOptionLeadsDropDown(DataUtils.readAccounts("leadsview.option"));
 		UserMenu um=new UserMenu(driver, test);
 		um.userMenu.click();
 		um.logout.click();
 		Utilities.waitForElement(driver, lp.username);
-		AssertJUnit.assertTrue(lp.enterUsername(DataUtils.readAccounts("valid.username")),"Username should be entered");
-		AssertJUnit.assertTrue(lp.enterPswd(DataUtils.readAccounts("valid.password")),"Pswd should be entered");
-		AssertJUnit.assertTrue(lp.clickLogin(),"Login should be clicked");
-		AssertJUnit.assertTrue(l.clickOnLeads(), "Leads should be clicked");
-		AssertJUnit.assertTrue(l.validateDefaultOption((DataUtils.readAccounts("leadsview.option"))), "Leads view should be default");
+		AssertJUnit.assertTrue("Username should be entered",lp.enterUsername(DataUtils.readAccounts("valid.username")));
+		AssertJUnit.assertTrue("Pswd should be entered",lp.enterPswd(DataUtils.readAccounts("valid.password")));
+		AssertJUnit.assertTrue("Login should be clicked",lp.clickLogin());
+		AssertJUnit.assertTrue("Leads should be clicked", l.clickOnLeads());
+		AssertJUnit.assertTrue("Leads view should be default", l.validateDefaultOption((DataUtils.readAccounts("leadsview.option"))));
 		logger.info(name.getName()+"---------ended-------------");
 	}
 	
@@ -74,10 +74,10 @@ public class LeadsScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		Leads l=new Leads(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should happen");
-		AssertJUnit.assertTrue(l.clickOnLeads(), "Leads should be clicked");
+		AssertJUnit.assertTrue("Login should happen", lp.loginToSFDC());
+		AssertJUnit.assertTrue("Leads should be clicked", l.clickOnLeads());
 		l.selectOptionLeadsDropDown(DataUtils.readAccounts("leadsview.option"));
-		AssertJUnit.assertTrue(l.validateDefaultOption((DataUtils.readAccounts("leadsview.option"))), "Leads view should be default");
+		AssertJUnit.assertTrue("Leads view should be default", l.validateDefaultOption((DataUtils.readAccounts("leadsview.option"))));
 		logger.info(name.getName()+"---------ended-------------");
 	}
 	
@@ -88,9 +88,9 @@ public class LeadsScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		Leads l=new Leads(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should happen");
-		AssertJUnit.assertTrue(l.clickOnLeads(), "Leads should be clicked");
-		AssertJUnit.assertTrue(l.newwLead(), "New Lead should be created");
+		AssertJUnit.assertTrue("Login should happen", lp.loginToSFDC());
+		AssertJUnit.assertTrue("Leads should be clicked", l.clickOnLeads());
+		AssertJUnit.assertTrue("New Lead should be created", l.newwLead());
 		logger.info(name.getName()+"---------ended-------------");
 	}
 }

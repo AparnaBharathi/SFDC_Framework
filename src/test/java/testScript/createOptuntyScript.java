@@ -25,13 +25,13 @@ public class createOptuntyScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		CreateOptunty co=new CreateOptunty(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should happen");
+		AssertJUnit.assertTrue("Login should happen", lp.loginToSFDC());
 		Utilities.waitForElement(driver, co.opTab);
 		co.opTab.click();
 		Utilities.waitForElement(driver, co.opDropDown);
 		co.opDropDown.click();
-		AssertJUnit.assertTrue(co.verifyOpDropDownItems(),"Items should be verified");
-		AssertJUnit.assertTrue(co.selectOptionOpDropDown(3),"Option should be selected");
+		AssertJUnit.assertTrue(co.verifyOpDropDownItems());
+		AssertJUnit.assertTrue(co.selectOptionOpDropDown(3));
 		logger.info(name.getName()+" --------ended---------");
 	}
 	
@@ -42,10 +42,10 @@ public class createOptuntyScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		CreateOptunty co=new CreateOptunty(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should happen");
+		AssertJUnit.assertTrue(lp.loginToSFDC());
 		Utilities.waitForElement(driver, co.opTab);
 		co.opTab.click();
-		AssertJUnit.assertTrue(co.createNewOp(),"New oportunity should be created");
+		AssertJUnit.assertTrue(co.createNewOp());
 		logger.info(name.getName()+"---------ended-------------");
 	}
 	
@@ -56,10 +56,10 @@ public class createOptuntyScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		CreateOptunty co=new CreateOptunty(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should happen");
+		AssertJUnit.assertTrue(lp.loginToSFDC());
 		Utilities.waitForElement(driver, co.opTab);
 		co.opTab.click();
-		AssertJUnit.assertTrue(co.opPipeline(),"Opportunity pipeline should be created");
+		AssertJUnit.assertTrue(co.opPipeline());
 		logger.info(name.getName()+"---------ended-------------");
 	}
 	
@@ -70,10 +70,10 @@ public class createOptuntyScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		CreateOptunty co=new CreateOptunty(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should happen");
+		AssertJUnit.assertTrue(lp.loginToSFDC());
 		Utilities.waitForElement(driver, co.opTab);
 		co.opTab.click();
-		AssertJUnit.assertTrue(co.opStuckReport(),"Opportunity Stuck report should be created");
+		AssertJUnit.assertTrue(co.opStuckReport());
 		logger.info(name.getName()+"---------ended-------------");
 	}
 	
@@ -84,10 +84,10 @@ public class createOptuntyScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		CreateOptunty co=new CreateOptunty(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should happen");
+		AssertJUnit.assertTrue(lp.loginToSFDC());
 		Utilities.waitForElement(driver, co.opTab);
 		co.opTab.click();
-		AssertJUnit.assertTrue(co.quatSummaryReport(),"Quaterly report should be created");
+		AssertJUnit.assertTrue(co.quatSummaryReport());
 		logger.info(name.getName()+"---------ended-------------");
 	}
 }

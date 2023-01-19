@@ -1,40 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-09T23:41:22 PST" name="Default suite" finished-at="2023-01-09T23:41:41 PST" duration-ms="19480">
+  <suite started-at="2023-01-19T09:20:19 PST" name="Default suite" finished-at="2023-01-19T09:20:35 PST" duration-ms="16033">
     <groups>
     </groups>
-    <test started-at="2023-01-09T23:41:22 PST" name="Default test" finished-at="2023-01-09T23:41:41 PST" duration-ms="19480">
-      <class name="testScript.RandomScenariosScript">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testScript.RandomScenariosScript@ee86bcb]" started-at="2023-01-09T23:41:21 PST" name="setUp" finished-at="2023-01-09T23:41:22 PST" duration-ms="306" status="PASS">
+    <test started-at="2023-01-19T09:20:19 PST" name="Default test" finished-at="2023-01-19T09:20:35 PST" duration-ms="16033">
+      <class name="testScript.UserMenuScript">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScript.UserMenuScript@7f132176]" started-at="2023-01-19T09:20:19 PST" name="setUp" finished-at="2023-01-19T09:20:19 PST" duration-ms="431" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.RandomScenariosScript@ee86bcb]" started-at="2023-01-09T23:41:22 PST" name="setDriver" finished-at="2023-01-09T23:41:25 PST" duration-ms="3132" status="PASS">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:testScript.UserMenuScript@7f132176]" started-at="2023-01-19T09:20:19 PST" name="setDriver" finished-at="2023-01-19T09:20:23 PST" duration-ms="3941" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="myProfile_TC34(java.lang.reflect.Method)[pri:35, instance:testScript.RandomScenariosScript@ee86bcb]" started-at="2023-01-09T23:41:25 PST" name="myProfile_TC34" finished-at="2023-01-09T23:41:41 PST" duration-ms="16014" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScript.UserMenuScript@7f132176]" started-at="2023-01-19T09:20:23 PST" name="setUp" finished-at="2023-01-19T09:20:24 PST" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logout_TC09(java.lang.reflect.Method)[pri:10, instance:testScript.UserMenuScript@7f132176]" started-at="2023-01-19T09:20:24 PST" name="logout_TC09" finished-at="2023-01-19T09:20:35 PST" duration-ms="11148" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public static void testScript.RandomScenariosScript.myProfile_TC34(java.lang.reflect.Method) throws java.io.IOException,java.lang.InterruptedException]]>
+                <![CDATA[public static void testScript.UserMenuScript.logout_TC09(java.lang.reflect.Method) throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- myProfile_TC34 -->
-        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.RandomScenariosScript@ee86bcb]" started-at="2023-01-09T23:41:41 PST" name="removeDriver" finished-at="2023-01-09T23:41:41 PST" duration-ms="286" status="PASS">
+        </test-method> <!-- logout_TC09 -->
+        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScript.UserMenuScript@7f132176]" started-at="2023-01-19T09:20:35 PST" name="removeDriver" finished-at="2023-01-19T09:20:35 PST" duration-ms="234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeDriver -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testScript.RandomScenariosScript@ee86bcb]" started-at="2023-01-09T23:41:41 PST" name="tearDown" finished-at="2023-01-09T23:41:42 PST" duration-ms="402" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testScript.UserMenuScript@7f132176]" started-at="2023-01-19T09:20:35 PST" name="tearDown" finished-at="2023-01-19T09:20:35 PST" duration-ms="515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testScript.RandomScenariosScript -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testScript.UserMenuScript@7f132176]" started-at="2023-01-19T09:20:35 PST" name="tearDown" finished-at="2023-01-19T09:20:35 PST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testScript.UserMenuScript -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

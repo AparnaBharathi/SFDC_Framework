@@ -24,10 +24,10 @@ public class LoginPageScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		logger.info("Started test " +name.getName());
 		LoginPage lp=new LoginPage(driver,test);
-		AssertJUnit.assertTrue(lp.launchApp(driver), "App should be launched");
-		AssertJUnit.assertTrue(lp.enterUsername(DataUtils.readAccounts("valid.username")), "Username not entered");
-		AssertJUnit.assertTrue(lp.clearPasswd(), "Password should be cleared");
-		AssertJUnit.assertTrue(lp.clickLogin(), "Login should be clicked");
+		AssertJUnit.assertTrue(lp.launchApp(driver));
+		AssertJUnit.assertTrue(lp.enterUsername(DataUtils.readAccounts("valid.username")));
+		AssertJUnit.assertTrue(lp.clearPasswd());
+		AssertJUnit.assertTrue(lp.clickLogin());
 		Utilities.waitForElement(driver, lp.loginError);
 		AssertJUnit.assertEquals(lp.getErrorMsg(), DataUtils.readExpectedError("blank.password"));
 		logger.info("******Ending test *********" +name.getName());
@@ -39,8 +39,8 @@ public class LoginPageScript extends BaseTest{
 		WebDriver driver=BaseTest.getDriver();
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should happen");
-		AssertJUnit.assertTrue(lp.isFreeTrialSeen(), "Free trial should be seen");
+		AssertJUnit.assertTrue(lp.loginToSFDC());
+		AssertJUnit.assertTrue(lp.isFreeTrialSeen());
 		logger.info("******Ending test ********* " +name.getName());
 		
 	}
@@ -52,14 +52,14 @@ public class LoginPageScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		UserMenu um=new UserMenu(driver,test);
-		AssertJUnit.assertTrue(lp.launchApp(driver), "App should be launched");
-		AssertJUnit.assertTrue(lp.enterUsername(DataUtils.readAccounts("valid.username")), "Username should be entered");
-		AssertJUnit.assertTrue(lp.enterPswd(DataUtils.readAccounts("valid.password")), "Password should be entered");
-		AssertJUnit.assertTrue(lp.rememberMe(), "RemeberMe should be clicked");
-		AssertJUnit.assertTrue(lp.clickLogin(), "Login should be clicked");
+		AssertJUnit.assertTrue(lp.launchApp(driver));
+		AssertJUnit.assertTrue(lp.enterUsername(DataUtils.readAccounts("valid.username")));
+		AssertJUnit.assertTrue(lp.enterPswd(DataUtils.readAccounts("valid.password")));
+		AssertJUnit.assertTrue(lp.rememberMe());
+		AssertJUnit.assertTrue(lp.clickLogin());
 		Utilities.waitForElement(driver, um.userMenu);
-		AssertJUnit.assertTrue(um.clickOnUserMenu(), "User Menu should be clicked");
-		AssertJUnit.assertTrue(um.selectOptionUserMenuDropDown("Logout"), "Logut should be clicked");
+		AssertJUnit.assertTrue(um.clickOnUserMenu());
+		AssertJUnit.assertTrue(um.selectOptionUserMenuDropDown("Logout"));
 		Utilities.waitForElement(driver, lp.savedUser);
 		AssertJUnit.assertEquals(lp.getSavedUser(), DataUtils.readAccounts("valid.username"));
 		logger.info("******Ending test ********* " +name.getName());
@@ -71,8 +71,8 @@ public class LoginPageScript extends BaseTest{
 		WebDriver driver=BaseTest.getDriver();
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
-		AssertJUnit.assertTrue(lp.launchApp(driver), "App should be launched");
-		AssertJUnit.assertTrue(lp.clickOnForgotPswd(), "Forgot pswd should be clicked");
+		AssertJUnit.assertTrue(lp.launchApp(driver));
+		AssertJUnit.assertTrue(lp.clickOnForgotPswd());
 		Utilities.waitForElement(driver, lp.forgotPswdTitile);
 		AssertJUnit.assertEquals(lp.verifyForgotPswdTitle(), "Forgot Your Password");
 		logger.info("******Ending test ********* " +name.getName());
@@ -84,10 +84,10 @@ public class LoginPageScript extends BaseTest{
 		WebDriver driver=BaseTest.getDriver();
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
-		AssertJUnit.assertTrue(lp.launchApp(driver), "App should be launched");
-		AssertJUnit.assertTrue(lp.enterUsername(DataUtils.readAccounts("invalid.username")), "Username should be entered");
-		AssertJUnit.assertTrue(lp.enterPswd(DataUtils.readAccounts("invalid.password")), "Password should be entered");
-		AssertJUnit.assertTrue(lp.clickLogin(), "Login should be clicked");
+		AssertJUnit.assertTrue(lp.launchApp(driver));
+		AssertJUnit.assertTrue(lp.enterUsername(DataUtils.readAccounts("invalid.username")));
+		AssertJUnit.assertTrue(lp.enterPswd(DataUtils.readAccounts("invalid.password")));
+		AssertJUnit.assertTrue(lp.clickLogin());
 		AssertJUnit.assertEquals(lp.getErrorMsg(), DataUtils.readExpectedError("wrong.unamepswd"));
 		logger.info("******Ending test *********" +name.getName());
 	}

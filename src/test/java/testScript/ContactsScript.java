@@ -23,10 +23,10 @@ public class ContactsScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		Contacts c=new Contacts(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should happen");
+		AssertJUnit.assertTrue("Login should happen", lp.loginToSFDC());
 		Utilities.waitForElement(driver, c.contacts_tab);
 		c.contacts_tab.click();
-		AssertJUnit.assertTrue(c.createNewContact(),"New contact should be created");
+		AssertJUnit.assertTrue("New contact should be created",c.createNewContact());
 		logger.info(name.getName()+"---------ended-------------");
 	}
 	
@@ -37,10 +37,10 @@ public class ContactsScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		Contacts c=new Contacts(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should happen");
+		AssertJUnit.assertTrue("Login should happen", lp.loginToSFDC());
 		Utilities.waitForElement(driver, c.contacts_tab);
 		c.contacts_tab.click();
-		AssertJUnit.assertTrue(c.createNewContactView(),"New contact view should be created");
+		AssertJUnit.assertTrue("New contact view should be created",c.createNewContactView());
 		logger.info(name.getName()+"---------ended-------------");
 	}
 	
@@ -51,10 +51,10 @@ public class ContactsScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		Contacts c=new Contacts(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should happen");
+		AssertJUnit.assertTrue("Login should happen", lp.loginToSFDC());
 		Utilities.waitForElement(driver, c.contacts_tab);
 		c.contacts_tab.click();
-		AssertJUnit.assertTrue(c.recentlyCreated(),"Recentlycreate contact should be displayed");
+		AssertJUnit.assertTrue("Recentlycreate contact should be displayed",c.recentlyCreated());
 		logger.info(name.getName()+"---------ended-------------");
 	}
 	
@@ -65,10 +65,10 @@ public class ContactsScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		Contacts c=new Contacts(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should happen");
+		AssertJUnit.assertTrue("Login should happen", lp.loginToSFDC());
 		Utilities.waitForElement(driver, c.contacts_tab);
 		c.contacts_tab.click();
-		AssertJUnit.assertTrue(c.myConView(),"My contact view should be displayed");
+		AssertJUnit.assertTrue("My contact view should be displayed",c.myConView());
 		logger.info(name.getName()+"---------ended-------------");
 	}
 	
@@ -79,10 +79,10 @@ public class ContactsScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		Contacts c=new Contacts(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should happen");
+		AssertJUnit.assertTrue("Login should happen", lp.loginToSFDC());
 		Utilities.waitForElement(driver, c.contacts_tab);
 		c.contacts_tab.click();
-		AssertJUnit.assertTrue(c.viewCon(),"contact should be displayed");
+		AssertJUnit.assertTrue("contact should be displayed",c.viewCon());
 		logger.info(name.getName()+"---------ended-------------");
 	}
 	
@@ -93,10 +93,10 @@ public class ContactsScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		Contacts c=new Contacts(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should happen");
+		AssertJUnit.assertTrue("Login should happen", lp.loginToSFDC());
 		Utilities.waitForElement(driver, c.contacts_tab);
 		c.contacts_tab.click();
-		AssertJUnit.assertTrue(c.createNewViewError(),"Error should be displayed");
+		AssertJUnit.assertTrue("Error should be displayed",c.createNewViewError());
 		logger.info(name.getName()+"---------ended-------------");
 	}
 	
@@ -107,10 +107,10 @@ public class ContactsScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		Contacts c=new Contacts(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should happen");
+		AssertJUnit.assertTrue("Login should happen", lp.loginToSFDC());
 		Utilities.waitForElement(driver, c.contacts_tab);
 		c.contacts_tab.click();
-		AssertJUnit.assertTrue(c.cancelView(),"Error should be displayed");
+		AssertJUnit.assertTrue("Error should be displayed",c.cancelView());
 		logger.info(name.getName()+"---------ended-------------");
 	}
 	
@@ -121,10 +121,10 @@ public class ContactsScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		Contacts c=new Contacts(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should happen");
+		AssertJUnit.assertTrue("Login should happen", lp.loginToSFDC());
 		Utilities.waitForElement(driver, c.contacts_tab);
 		c.contacts_tab.click();
-		AssertJUnit.assertTrue(c.saveandNewButton(),"Save ad New should work");
+		AssertJUnit.assertTrue("Save ad New should work",c.saveandNewButton());
 		logger.info(name.getName()+"---------ended-------------");
 	}
 }

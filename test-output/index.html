@@ -104,7 +104,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testScript.RandomScenariosScript" class="method navigator-link" hash-for-method="myProfile_TC34(public static void testScript.RandomScenariosScript.myProfile_TC34(java.lang.reflect.Method) throws ...)">myProfile_TC34(public static void testScript.RandomScenariosScript.myProfile_TC34(java.lang.reflect.Method) throws ...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testScript.UserMenuScript" class="method navigator-link" hash-for-method="logout_TC09(public static void testScript.UserMenuScript.logout_TC09(java.lang.reflect.Method) throws java.io.IO...)">logout_TC09(public static void testScript.UserMenuScript.logout_TC09(java.lang.reflect.Method) throws java.io.IO...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,15 +122,15 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testScript.RandomScenariosScript</span>
+              <span class="class-name">testScript.UserMenuScript</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="myProfile_TC34(public static void testScript.RandomScenariosScript.myProfile_TC34(java.lang.reflect.Method) throws ...)">
-                  </a> <!-- myProfile_TC34(public static void testScript.RandomScenariosScript.myProfile_TC34(java.lang.reflect.Method) throws ...) -->
-                  <span class="method-name">myProfile_TC34</span>
-                  <span class="parameters">(public static void testScript.RandomScenariosScript.myProfile_TC34(java.lang.reflect.Method) throws java.io.IOException,java.lang.InterruptedException)</span>
+                  <a name="logout_TC09(public static void testScript.UserMenuScript.logout_TC09(java.lang.reflect.Method) throws java.io.IO...)">
+                  </a> <!-- logout_TC09(public static void testScript.UserMenuScript.logout_TC09(java.lang.reflect.Method) throws java.io.IO...) -->
+                  <span class="method-name">logout_TC09</span>
+                  <span class="parameters">(public static void testScript.UserMenuScript.logout_TC09(java.lang.reflect.Method) throws java.io.IOException)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -138,7 +138,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/4c/r0219mjj4zq0m__02s6h96c00000gn/T/testng-eclipse--656724284/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/4c/r0219mjj4zq0m__02s6h96c00000gn/T/testng-eclipse--1225291399/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -147,11 +147,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testScript.RandomScenariosScript&quot;&gt;
+      &lt;class name=&quot;testScript.UserMenuScript&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;myProfile_TC34&quot;/&gt;
+          &lt;include name=&quot;logout_TC09&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testScript.RandomScenariosScript --&gt;
+      &lt;/class&gt; &lt;!-- testScript.UserMenuScript --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -193,14 +193,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'myProfile_TC34')
-data.setCell(0, 2, 'testScript.RandomScenariosScript')
-data.setCell(0, 3, 16014);
+data.setCell(0, 1, 'logout_TC09')
+data.setCell(0, 2, 'testScript.UserMenuScript')
+data.setCell(0, 3, 11148);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -215,15 +215,19 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">testScript.RandomScenariosScript</span>
+              <span class="ignored-class-name">testScript.UserMenuScript</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyTab_TC35</span>
+                <span class="ignored-method-name">mySettings_TC07</span>
                 <br/>
-                <span class="ignored-method-name">verifyName_TC33</span>
+                <span class="ignored-method-name">verifyItems_TC05</span>
+                <br/>
+                <span class="ignored-method-name">developerConsole_TC08</span>
+                <br/>
+                <span class="ignored-method-name">myProfile_TC06</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -235,26 +239,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testScript.RandomScenariosScript</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testScript.UserMenuScript</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setDriver</span>
-                <span class="method-start">344 ms</span>
+                <span class="method-start">482 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">4426 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">myProfile_TC34(public static void testScript.RandomScenariosScript.myProfile_TC34(java.lang.reflect.Method) throws ...)</span>
-                <span class="method-start">3480 ms</span>
+                <span class="method-name">logout_TC09(public static void testScript.UserMenuScript.logout_TC09(java.lang.reflect.Method) throws java.io.IO...)</span>
+                <span class="method-start">4556 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">removeDriver</span>
-                <span class="method-start">19498 ms</span>
+                <span class="method-start">15710 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">15944 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">19806 ms</span>
+                <span class="method-start">16492 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

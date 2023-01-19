@@ -22,8 +22,8 @@ public class CreateAccountsScript extends BaseTest{
 		ExtentTest test=extent.createTest("createAccount_TC10");
 		LoginPage lp=new LoginPage(driver,test);
 		CreateAccount ca=new CreateAccount(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should be happened");
-		AssertJUnit.assertTrue(ca.createAcc(),"Account should be created");
+		AssertJUnit.assertTrue("Login should be happened", lp.loginToSFDC());
+		AssertJUnit.assertTrue("Account should be created",ca.createAcc());
 }
 	@Test(priority=12)
 	public static void createNewView_TC11() throws IOException  {
@@ -31,8 +31,8 @@ public class CreateAccountsScript extends BaseTest{
 		ExtentTest test=extent.createTest("createNewView_TC11");
 		LoginPage lp=new LoginPage(driver,test);
 		CreateAccount ca=new CreateAccount(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should be happened");
-		AssertJUnit.assertTrue(ca.createNewView(),"New view should be created");
+		AssertJUnit.assertTrue("Login should be happened", lp.loginToSFDC());
+		AssertJUnit.assertTrue("New view should be created",ca.createNewView());
 	}
 	
 	@Test(priority=13)
@@ -41,8 +41,8 @@ public class CreateAccountsScript extends BaseTest{
 		ExtentTest test=extent.createTest("editView_TC12");
 		LoginPage lp=new LoginPage(driver,test);
 		CreateAccount ca=new CreateAccount(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should be happened");
-		AssertJUnit.assertTrue(ca.editView(),"View is should be edited");
+		AssertJUnit.assertTrue("Login should be happened", lp.loginToSFDC());
+		AssertJUnit.assertTrue("View is should be edited",ca.editView());
 	}
 	
 	@Test(priority=14)
@@ -51,8 +51,8 @@ public class CreateAccountsScript extends BaseTest{
 		ExtentTest test=extent.createTest("mergeAcc_TC13");
 		LoginPage lp=new LoginPage(driver,test);
 		CreateAccount ca=new CreateAccount(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should be happened");
-		AssertJUnit.assertTrue(ca.mergeAccounts(),"Accounts should be merged");
+		AssertJUnit.assertTrue("Login should be happened", lp.loginToSFDC());
+		AssertJUnit.assertTrue("Accounts should be merged",ca.mergeAccounts());
 	}
 	
 	@Test(priority=15)
@@ -61,8 +61,8 @@ public class CreateAccountsScript extends BaseTest{
 		ExtentTest test=extent.createTest("createAccReport_TC14");
 		LoginPage lp=new LoginPage(driver,test);
 		CreateAccount ca=new CreateAccount(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should be happened");
-		AssertJUnit.assertTrue(ca.createAccountReports(),"Reports should be created");
+		AssertJUnit.assertTrue("Login should be happened", lp.loginToSFDC());
+		AssertJUnit.assertTrue("Reports should be created",ca.createAccountReports());
 	}
 }
 	

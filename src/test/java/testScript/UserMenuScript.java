@@ -25,10 +25,10 @@ public class UserMenuScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		UserMenu um=new UserMenu(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should be happened");
+		AssertJUnit.assertTrue(lp.loginToSFDC());
 		Utilities.waitForElement(driver, um.userMenu);
-		AssertJUnit.assertTrue(um.clickOnUserMenu(), "User Menu should be clicked");
-		AssertJUnit.assertTrue(um.verifyUserMenuItems(),"User Menu items should be found");
+		AssertJUnit.assertTrue(um.clickOnUserMenu());
+		AssertJUnit.assertTrue(um.verifyUserMenuItems());
 		logger.info("******Ending test *********" +name.getName());
 }
 	
@@ -39,21 +39,21 @@ public class UserMenuScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		UserMenu um=new UserMenu(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should be happened");
+		AssertJUnit.assertTrue(lp.loginToSFDC());
 		Utilities.waitForElement(driver, um.userMenu);
-		AssertJUnit.assertTrue(um.clickOnUserMenu(), "User Menu should be clicked");
-		AssertJUnit.assertTrue(um.verifyUserMenuItems(),"User Menu items should be found");
-		AssertJUnit.assertTrue(um.selectOptionUserMenuDropDown("My Profile"),"should be found");
+		AssertJUnit.assertTrue(um.clickOnUserMenu());
+		AssertJUnit.assertTrue(um.verifyUserMenuItems());
+		AssertJUnit.assertTrue(um.selectOptionUserMenuDropDown("My Profile"));
 		Thread.sleep(3000);
 		Utilities.waitForElement(driver, um.editProfile);
-		AssertJUnit.assertTrue(um.editProf(),"Profile name should be edited");
-		AssertJUnit.assertTrue(um.clickOnUserMenu(), "User Menu should be clicked");
-		AssertJUnit.assertTrue(um.selectOptionUserMenuDropDown("My Profile"),"should be found");
+		AssertJUnit.assertTrue(um.editProf());
+		AssertJUnit.assertTrue(um.clickOnUserMenu());
+		AssertJUnit.assertTrue(um.selectOptionUserMenuDropDown("My Profile"));
 		Utilities.waitForElement(driver, um.postLink);
-		AssertJUnit.assertTrue(um.post(),"Posted");
-		AssertJUnit.assertTrue(um.clickOnUserMenu(), "User Menu should be clicked");
-		AssertJUnit.assertTrue(um.selectOptionUserMenuDropDown("My Profile"),"should be found");
-		AssertJUnit.assertTrue(um.uploadFile(),"File should be uplaoded");
+		AssertJUnit.assertTrue(um.post());
+		AssertJUnit.assertTrue(um.clickOnUserMenu());
+		AssertJUnit.assertTrue(um.selectOptionUserMenuDropDown("My Profile"));
+		AssertJUnit.assertTrue(um.uploadFile());
 		logger.info("******Ending test *********" +name.getName());
 }
 	
@@ -64,23 +64,23 @@ public class UserMenuScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		UserMenu um=new UserMenu(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should be happened");
+		AssertJUnit.assertTrue(lp.loginToSFDC());
 		Utilities.waitForElement(driver, um.userMenu);
-		AssertJUnit.assertTrue(um.clickOnUserMenu(), "User Menu should be clicked");
-		AssertJUnit.assertTrue(um.verifyUserMenuItems(),"User Menu items should be found");
-		AssertJUnit.assertTrue(um.selectOptionUserMenuDropDown("My Settings"),"should be found");
-		AssertJUnit.assertTrue(um.downloadLoginHistory(),"Download should be done");
-		AssertJUnit.assertTrue(um.clickOnUserMenu(), "User Menu should be clicked");
-		AssertJUnit.assertTrue(um.selectOptionUserMenuDropDown("My Settings"),"should be found");
-		AssertJUnit.assertTrue(um.removeTab("Chatter"),"Chatter should be removed");
-		AssertJUnit.assertTrue(um.addTab("Chatter"),"Chatter should be added");
-		AssertJUnit.assertTrue(um.verifyTab("Chatter_Tab"),"Chatter should be verified");
-		AssertJUnit.assertTrue(um.clickOnUserMenu(), "User Menu should be clicked");
-		AssertJUnit.assertTrue(um.selectOptionUserMenuDropDown("My Settings"),"should be found");
-		AssertJUnit.assertTrue(um.emailEdit(),"Email should be edited");
-		AssertJUnit.assertTrue(um.clickOnUserMenu(), "User Menu should be clicked");
-		AssertJUnit.assertTrue(um.selectOptionUserMenuDropDown("My Settings"),"should be found");
-		AssertJUnit.assertTrue(um.calendar_reminder(),"Activity reminder should be working");
+		AssertJUnit.assertTrue(um.clickOnUserMenu());
+		AssertJUnit.assertTrue(um.verifyUserMenuItems());
+		AssertJUnit.assertTrue(um.selectOptionUserMenuDropDown("My Settings"));
+		AssertJUnit.assertTrue(um.downloadLoginHistory());
+		AssertJUnit.assertTrue(um.clickOnUserMenu());
+		AssertJUnit.assertTrue(um.selectOptionUserMenuDropDown("My Settings"));
+		AssertJUnit.assertTrue(um.removeTab("Chatter"));
+		AssertJUnit.assertTrue(um.addTab("Chatter"));
+		AssertJUnit.assertTrue(um.verifyTab("Chatter_Tab"));
+		AssertJUnit.assertTrue(um.clickOnUserMenu());
+		AssertJUnit.assertTrue(um.selectOptionUserMenuDropDown("My Settings"));
+		AssertJUnit.assertTrue(um.emailEdit());
+		AssertJUnit.assertTrue(um.clickOnUserMenu());
+		AssertJUnit.assertTrue(um.selectOptionUserMenuDropDown("My Settings"));
+		AssertJUnit.assertTrue(um.calendar_reminder());
 		logger.info("******Ending test *********" +name.getName());
 }
 	
@@ -91,12 +91,12 @@ public class UserMenuScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		UserMenu um=new UserMenu(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should be happened");
+		AssertJUnit.assertTrue(lp.loginToSFDC());
 		Utilities.waitForElement(driver, um.userMenu);
-		AssertJUnit.assertTrue(um.clickOnUserMenu(), "User Menu should be clicked");
-		AssertJUnit.assertTrue(um.verifyUserMenuItems(),"User Menu items should be found");
-		AssertJUnit.assertTrue(um.selectOptionUserMenuDropDown("Developer Console"),"should be found");
-		AssertJUnit.assertTrue(um.developerConsole(),"Developer concole should be opened");
+		AssertJUnit.assertTrue(um.clickOnUserMenu());
+		AssertJUnit.assertTrue(um.verifyUserMenuItems());
+		AssertJUnit.assertTrue(um.selectOptionUserMenuDropDown("Developer Console"));
+		AssertJUnit.assertTrue(um.developerConsole());
 		logger.info("******Ending test *********" +name.getName());
 	}
 	
@@ -107,13 +107,13 @@ public class UserMenuScript extends BaseTest{
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		UserMenu um=new UserMenu(driver,test);
-		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should be happened");
+		AssertJUnit.assertTrue(lp.loginToSFDC());
 		Utilities.waitForElement(driver, um.userMenu);
-		AssertJUnit.assertTrue(um.clickOnUserMenu(), "User Menu should be clicked");
-		AssertJUnit.assertTrue(um.verifyUserMenuItems(),"User Menu items should be found");
-		AssertJUnit.assertTrue(um.selectOptionUserMenuDropDown("Logout"),"should be found");
+		AssertJUnit.assertTrue(um.clickOnUserMenu());
+		AssertJUnit.assertTrue(um.verifyUserMenuItems());
+		AssertJUnit.assertTrue(um.selectOptionUserMenuDropDown("Logout"));
 		Utilities.waitForElement(driver, lp.username);
-		AssertJUnit.assertTrue(lp.enterUsername(DataUtils.readAccounts("valid.username")), "Username should be entered");
+		AssertJUnit.assertTrue(lp.enterUsername(DataUtils.readAccounts("valid.username")));
 		logger.info("******Ending test *********" +name.getName());
 	}
 }
