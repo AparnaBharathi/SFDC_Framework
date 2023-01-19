@@ -1,5 +1,7 @@
 package testScript;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.lang.reflect.Method;
 
@@ -24,8 +26,8 @@ public class RandomScenariosScript extends BaseTest {
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		RandomScenrios rs=new RandomScenrios(driver,test);
-		Assert.assertTrue(lp.loginToSFDC(), "Login should happen");
-		Assert.assertTrue(rs.validateUserName(), "Username should be validated");
+		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should happen");
+		AssertJUnit.assertTrue(rs.validateUserName(), "Username should be validated");
 		logger.info("******Ending test *********" +name.getName());
 	}
 	
@@ -36,14 +38,14 @@ public class RandomScenariosScript extends BaseTest {
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		UserMenu um=new UserMenu(driver,test);
-		Assert.assertTrue(lp.loginToSFDC(), "Login should be happened");
+		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should be happened");
 		Utilities.waitForElement(driver, um.userMenu);
-		Assert.assertTrue(um.clickOnUserMenu(), "User Menu should be clicked");
-		Assert.assertTrue(um.verifyUserMenuItems(),"User Menu items should be found");
-		Assert.assertTrue(um.selectOptionUserMenuDropDown("My Profile"),"should be found");
+		AssertJUnit.assertTrue(um.clickOnUserMenu(), "User Menu should be clicked");
+		AssertJUnit.assertTrue(um.verifyUserMenuItems(),"User Menu items should be found");
+		AssertJUnit.assertTrue(um.selectOptionUserMenuDropDown("My Profile"),"should be found");
 		Thread.sleep(3000);
 		Utilities.waitForElement(driver, um.editProfile);
-		Assert.assertTrue(um.editProf(),"Profile name should be edited");
+		AssertJUnit.assertTrue(um.editProf(),"Profile name should be edited");
 		logger.info("******Ending test *********" +name.getName());	
 	}
 	
@@ -54,17 +56,17 @@ public class RandomScenariosScript extends BaseTest {
 		ExtentTest test=extent.createTest(name.getName());
 		LoginPage lp=new LoginPage(driver,test);
 		UserMenu um=new UserMenu(driver,test);
-		Assert.assertTrue(lp.loginToSFDC(), "Login should happen");
-		Assert.assertTrue(um.clickOnUserMenu(), "User Menu should be clicked");
-		Assert.assertTrue(um.selectOptionUserMenuDropDown("My Settings"),"should be found");
-		Assert.assertTrue(um.removeTab("Chatter"),"Chatter should be removed");
-		Assert.assertTrue(um.addTab("Chatter"),"Chatter should be added");
-		Assert.assertTrue(um.clickOnUserMenu(), "User Menu should be clicked");
-		Assert.assertTrue(um.selectOptionUserMenuDropDown("Logout"),"should be found");
+		AssertJUnit.assertTrue(lp.loginToSFDC(), "Login should happen");
+		AssertJUnit.assertTrue(um.clickOnUserMenu(), "User Menu should be clicked");
+		AssertJUnit.assertTrue(um.selectOptionUserMenuDropDown("My Settings"),"should be found");
+		AssertJUnit.assertTrue(um.removeTab("Chatter"),"Chatter should be removed");
+		AssertJUnit.assertTrue(um.addTab("Chatter"),"Chatter should be added");
+		AssertJUnit.assertTrue(um.clickOnUserMenu(), "User Menu should be clicked");
+		AssertJUnit.assertTrue(um.selectOptionUserMenuDropDown("Logout"),"should be found");
 		Utilities.waitForElement(driver, lp.username);
-		Assert.assertTrue(lp.enterUsername(DataUtils.readAccounts("valid.username")),"Username should be entered");
-		Assert.assertTrue(lp.enterPswd(DataUtils.readAccounts("valid.password")),"Pswd should be entered");
-		Assert.assertTrue(lp.clickLogin(),"Login should be clicked");
-		Assert.assertTrue(um.verifyTab("Chatter_Tab"),"Chatter should be verified");
+		AssertJUnit.assertTrue(lp.enterUsername(DataUtils.readAccounts("valid.username")),"Username should be entered");
+		AssertJUnit.assertTrue(lp.enterPswd(DataUtils.readAccounts("valid.password")),"Pswd should be entered");
+		AssertJUnit.assertTrue(lp.clickLogin(),"Login should be clicked");
+		AssertJUnit.assertTrue(um.verifyTab("Chatter_Tab"),"Chatter should be verified");
 	}
 }
