@@ -2,6 +2,8 @@ package testScript;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -72,6 +74,7 @@ public class BaseTest {
 		return driver;
 	}
 	
+	
 	@BeforeMethod
 	@BeforeSuite
 	public void setUp() {
@@ -79,6 +82,7 @@ public class BaseTest {
 		logger.info("setUp() success");
 	}
 	
+
 	@AfterMethod
 	@AfterSuite
 	public void tearDown() {
